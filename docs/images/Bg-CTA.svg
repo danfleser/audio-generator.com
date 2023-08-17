@@ -1,0 +1,47 @@
+<svg width="1170" height="556" viewBox="0 0 1170 556" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_126_1126" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1170" height="556">
+<rect width="1170" height="556" fill="#212121"/>
+</mask>
+<g mask="url(#mask0_126_1126)">
+<g opacity="0.5">
+<mask id="mask1_126_1126" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-48" y="-23" width="1267" height="955">
+<path d="M1218.9 -23H-48V932H1218.9V-23Z" fill="url(#paint0_radial_126_1126)"/>
+</mask>
+<g mask="url(#mask1_126_1126)">
+<g opacity="0.12">
+<path d="M106.969 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M170.261 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M233.554 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M296.846 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M360.138 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M423.432 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M486.723 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M550.016 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M613.308 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M676.6 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M739.891 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M803.183 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M866.476 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M929.767 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M993.061 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M1056.35 -19.1294V933.417" stroke="#212121" stroke-width="1.42068"/>
+<path d="M-19.6143 46.272H1247.28" stroke="#212121" stroke-width="1.42068"/>
+<path d="M-19.6143 552.442H1247.28" stroke="#212121" stroke-width="1.42068"/>
+<path d="M-19.6143 299.557H1247.28" stroke="#212121" stroke-width="1.42068"/>
+<path d="M-19.6143 109.564H1247.28" stroke="#212121" stroke-width="1.42068"/>
+<path d="M-19.6143 362.85H1247.28" stroke="#212121" stroke-width="1.42068"/>
+<path d="M-19.6143 172.855H1247.28" stroke="#212121" stroke-width="1.42068"/>
+<path d="M-19.6143 426.14H1247.28" stroke="#212121" stroke-width="1.42068"/>
+<path d="M-19.6143 236.147H1247.28" stroke="#212121" stroke-width="1.42068"/>
+<path d="M-19.6143 489.433H1247.28" stroke="#212121" stroke-width="1.42068"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_126_1126" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(543.863 442.618) rotate(-135) scale(537.907 602.395)">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
