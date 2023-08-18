@@ -2375,7 +2375,7 @@ figcaption {
   text-align: left;
   background-color: rgba(0, 0, 0, 0);
   outline: 0 rgba(0, 0, 0, 0);
-  margin-top: 0;
+  margin-top: 10px;
   padding: 2px 2px 2px 10px;
 }
 

@@ -4,19 +4,24 @@ const formIds = [
     'leadForm2',
 ];
 
-function showElement(element) {
-    element.style.display = 'block';
+function showElement(element, flex) {
+    setTimeout(() => {
+        element.style.display = flex ? 'flex' : 'block';
+    })
 }
 
 function hideElement(element) {
-    element.style.display = 'none';
+    setTimeout(() => {
+        element.style.display = 'none';
+    })
 }
 
 function onEmailSubmitSuccess() {
     formIds.forEach(formId => {
-        // hide form and fail message
+        // hide form, loading and fail message
         hideElement(document.getElementById(formId));
         hideElement(document.getElementById(`${formId}fail`));
+        hideElement(document.getElementById(`${formId}loading`));
         // show success message
         showElement(document.getElementById(`${formId}success`));
     });
@@ -29,11 +34,13 @@ formIds.forEach(formId => {
 
     form.addEventListener("submit", async (event) => {
         const inputId = `${formId}email`;
-        const successMessageId = `${formId}success`;
+        const loadingMessageId = `${formId}loading`;
         const failMessageId = `${formId}fail`;
 
         event.preventDefault();
         try {
+            showElement(document.getElementById(loadingMessageId));
+            hideElement(document.getElementById(formId));
             await axios.post('https://audio-generator-api.onrender.com/api/register',
                 {
                     'email': document.getElementById(inputId).value,
@@ -45,8 +52,10 @@ formIds.forEach(formId => {
                 });
             onEmailSubmitSuccess();
         } catch {
-            // show retry message
+            // show form and retry message, hide loading
+            showElement(document.getElementById(formId), true);
             showElement(document.getElementById(failMessageId));
+            hideElement(document.getElementById(loadingMessageId));
         }
     });
 })
