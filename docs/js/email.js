@@ -1,3 +1,10 @@
+const localStorageSubscribeKey = 'subscribed';
+const formIds = [
+    'leadForm1',
+    'leadForm2',
+    'leadForm3',
+];
+
 function showElement(element) {
     element.style.display = 'block';
 }
@@ -5,11 +12,20 @@ function showElement(element) {
 function hideElement(element) {
     element.style.display = 'none';
 }
-[
-    'leadForm1',
-    'leadForm2',
-    'leadForm3',
-].forEach(formId => {
+
+function onEmailSubmitSuccess() {
+    formIds.forEach(formId => {
+        // hide form and fail message
+        hideElement(document.getElementById(formId));
+        hideElement(document.getElementById(`${formId}fail`));
+        // show success message
+        showElement(document.getElementById(`${formId}success`));
+    });
+
+    localStorage.setItem(localStorageSubscribeKey, true);
+}
+
+formIds.forEach(formId => {
     const form = document.getElementById(formId);
 
     form.addEventListener("submit", async (event) => {
@@ -28,11 +44,14 @@ function hideElement(element) {
                         'Content-Type': 'application/json'
                     }
                 });
-            hideElement(form);
-            showElement(document.getElementById(successMessageId));
-            hideElement(document.getElementById(failMessageId));
+            onEmailSubmitSuccess();
         } catch {
+            // show retry message
             showElement(document.getElementById(failMessageId));
         }
     });
 })
+
+if (localStorage.getItem(localStorageSubscribeKey)) {
+    onEmailSubmitSuccess();
+}
