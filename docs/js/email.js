@@ -2,7 +2,6 @@ const localStorageSubscribeKey = 'subscribed';
 const formIds = [
     'leadForm1',
     'leadForm2',
-    'leadForm3',
 ];
 
 function showElement(element) {
