@@ -1,0 +1,49 @@
+<svg width="1170" height="689" viewBox="0 0 1170 689" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_126_1032" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1170" height="689">
+<rect width="1170" height="689" rx="36" fill="#212121"/>
+</mask>
+<g mask="url(#mask0_126_1032)">
+<g opacity="0.5">
+<mask id="mask1_126_1032" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="50" y="-127" width="1268" height="955">
+<path d="M1317.49 -127H50.5928V828H1317.49V-127Z" fill="url(#paint0_radial_126_1032)"/>
+</mask>
+<g mask="url(#mask1_126_1032)">
+<g opacity="0.12">
+<path d="M205.562 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M268.854 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M332.146 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M395.438 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M458.73 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M522.024 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M585.315 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M648.608 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M711.9 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M775.192 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M838.483 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M901.775 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M965.068 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M1028.36 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M1091.65 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M1154.94 -123.129V829.417" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 448.442H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 195.557H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 5.5647H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 511.734H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 258.849H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 68.8547H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 575.024H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 322.14H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 132.148H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 638.317H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+<path d="M78.9785 385.433H1345.88" stroke="#E2FE52" stroke-width="1.42068"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_126_1032" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(642.456 338.618) rotate(-135) scale(537.907 602.395)">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
