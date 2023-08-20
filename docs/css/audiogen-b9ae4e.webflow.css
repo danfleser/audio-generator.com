@@ -1,5 +1,5 @@
 :root {
-  --main-color: #b1d4e5;
+  --main-color: #e0e0e0;
   --secondary-color: #e5e5e5;
   --third-color: #bdc3f0;
   --fourth-color: #000000;
@@ -9,6 +9,15 @@
   flex-direction: column;
   align-items: flex-start;
   display: flex;
+}
+
+.hero-text-emboss {
+  background: var(--fourth-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .linear-gradient-text {
@@ -1967,7 +1976,7 @@ figcaption {
   overflow: hidden;
 }
 
-.hero-bg-grid {
+.hero-bg-gridd {
   background-image: url('images/imagesern.svg');
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -2102,7 +2111,6 @@ figcaption {
   bottom: 82%;
   left: auto;
   right: auto;
-  overflow: hidden;
   transform: translate(0%)rotate(0);
 }
 
@@ -2164,6 +2172,7 @@ figcaption {
   display: flex;
   position: absolute;
   overflow: hidden;
+  box-shadow: 0 7px 20px 5px #00000088;
 }
 
 .circle-image {
@@ -2252,13 +2261,13 @@ figcaption {
   z-index: 1;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   position: absolute;
-  top: auto;
-  bottom: 14%;
-  left: 0%;
-  right: 0%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   overflow: hidden;
 }
 
@@ -2423,7 +2432,7 @@ figcaption {
   right: 0%;
 }
 
-.html-embed, .audio-player-code {
+.audio-player-code {
   z-index: auto;
   flex-direction: row;
   flex: 1;
@@ -2593,16 +2602,8 @@ figcaption {
     max-width: 400px;
   }
 
-  .circle-image-parent {
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .2);
-  }
-
   .circle-sticky {
     margin-top: -15%;
-  }
-
-  .circle-item-text-container {
-    bottom: 15%;
   }
 
   .circle-item-text-holder {
@@ -3116,6 +3117,10 @@ figcaption {
   .circle-prompt-box {
     font-size: 30px;
   }
+
+  .circle-titles {
+    top: 100px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3603,7 +3608,7 @@ figcaption {
     height: 620px;
   }
 
-  .hero-bg-grid {
+  .hero-bg-gridd {
     background-size: 500px;
   }
 
@@ -3671,7 +3676,7 @@ figcaption {
   }
 
   .circle-titles {
-    top: -60px;
+    top: -145px;
   }
 
   .circle-item-text-holder {

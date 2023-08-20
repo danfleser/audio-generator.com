@@ -1,0 +1,240 @@
+.play-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.nft {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    max-width: 300px;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    filter: brightness(1.3);
+    margin-bottom: -110px;
+}
+
+.nft .main h2 {
+    color: white;
+    margin: 0;
+}
+
+.nft hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #88888855;
+    margin-top: 0;
+}
+
+.nft ins {
+    text-decoration: none;
+}
+
+.nft .main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 230px;
+}
+
+.nft .main .tokenImage {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    filter: blur(16px);
+    left: -4px;
+}
+
+.nft .main .description {
+    margin: 0.5rem 0;
+    color: var(--third-color);
+}
+
+.nft .main .tokenInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.nft .main .tokenInfo .price {
+    display: flex;
+    align-items: center;
+    color: #ee83e5;
+    font-weight: 700;
+}
+
+.nft .main .tokenInfo .duration {
+    display: flex;
+    align-items: center;
+    color: #a89ec9;
+    margin-right: 0.2rem;
+}
+
+.nft .creator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    margin-bottom: -0.3rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.nft .creator p {
+    margin: 0;
+    color: var(--third-color);
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff22;
+    padding: 0.3rem;
+    margin: 0;
+    margin-right: 0.5rem;
+    border-radius: 100%;
+    box-shadow: inset 0 0 0 4px #000000aa;
+}
+
+.wrapper img {
+    border-radius: 100%;
+    border: 1px solid #ffffff22;
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    margin: 0;
+    filter: blur(5px);
+}
+
+.wrapper .audio-player-code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg h1 {
+    zoom: 3;
+    filter: opacity(0.5) blur(2px);
+}
+
+.sponsor-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+@media screen and (min-width: 1440px) {}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 479px) {
+    .nft {
+        min-width: 166px;
+        overflow: visible;
+        margin-bottom: 60px;
+    }
+
+    .nft .main h2 {
+        font-size: 24px;
+    }
+
+    .nft .main .description {
+        font-size: 11px;
+    }
+
+    .demo-section-glass {
+        margin-top: 100px;
+    }
+
+    .circle-item-text-container {
+        overflow: visible;
+    }
+}
+
+@media screen and (max-device-width: 767px) {
+    .navbar {
+        filter: opacity(0.5);
+    }
+    .nft {
+        min-width: 166px;
+        overflow: visible;
+        margin-bottom: 160px;
+    }
+
+    .nft .main h2 {
+        font-size: 24px;
+    }
+
+    .nft .main .description {
+        font-size: 11px;
+    }
+
+    .demo-section-glass {
+        margin-top: 100px;
+    }
+
+    .circle-item-text-container {
+        overflow: visible;
+    }
+
+    .circle-titles {
+        margin-top: -80px;
+        zoom: 1.6;
+        filter: opacity(0.5) blur(2px) brightness(1.2);
+    }
+}
+
+@media screen and (max-device-width: 479px) {
+    .navbar {
+        filter: unset;
+    }
+    .nft {
+        min-width: 166px;
+        overflow: visible;
+        margin-bottom: 160px;
+    }
+
+    .nft .main h2 {
+        font-size: 24px;
+    }
+
+    .nft .main .description {
+        font-size: 11px;
+    }
+
+    .demo-section-glass {
+        margin-top: 100px;
+    }
+
+    .circle-item-text-container {
+        overflow: visible;
+    }
+
+    .circle-titles {
+        margin-top: -3%;
+        zoom: 1;
+        filter: unset;
+    }
+
+    .sponsor-logos {
+        flex-direction: column;
+    }
+}
