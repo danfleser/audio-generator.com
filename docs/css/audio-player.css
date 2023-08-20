@@ -51,6 +51,7 @@
     position: absolute;
     z-index: -1;
     filter: blur(16px);
+    transform: translate3d(0, 0, 0);
     left: -4px;
 }
 
@@ -114,6 +115,7 @@
     object-fit: cover;
     margin: 0;
     filter: blur(5px);
+    transform: translate3d(0, 0, 0);
 }
 
 .wrapper .audio-player-code {
@@ -130,6 +132,7 @@
 .bg h1 {
     zoom: 3;
     filter: opacity(0.5) blur(2px);
+    transform: translate3d(0, 0, 0);
 }
 
 .sponsor-logos {
@@ -199,6 +202,7 @@
         margin-top: -80px;
         zoom: 1.6;
         filter: opacity(0.5) blur(2px) brightness(1.2);
+        transform: translate3d(0, 0, 0);
     }
 }
 
