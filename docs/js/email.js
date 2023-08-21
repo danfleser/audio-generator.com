@@ -41,7 +41,7 @@ formIds.forEach(formId => {
         try {
             showElement(document.getElementById(loadingMessageId));
             hideElement(document.getElementById(formId));
-            await axios.post('https://audio-generator-api-com.vercel.app/api/register',
+            await axios.post('https://vast-erin-kangaroo-toga.cyclic.cloud/api/register',
                 {
                     'email': document.getElementById(inputId).value,
                 },
