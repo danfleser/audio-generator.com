@@ -347,6 +347,7 @@ figcaption {
   background-color: #212121;
   background-image: none;
   padding-right: 32px;
+  border-radius: 50px;
 }
 
 .grid-6-col {
@@ -2027,7 +2028,7 @@ figcaption {
 .hero-cta-input-holder {
   grid-column-gap: 20px;
   background-color: #fff;
-  border-radius: 24px;
+  border-radius: 50px;
   align-items: center;
   padding: 11px;
   transition: box-shadow .675s cubic-bezier(.251, 1.235, .32, 1.275), transform .65s cubic-bezier(.175, .885, .32, 1.275);
@@ -2879,7 +2880,7 @@ figcaption {
   }
 
   .hero-cta-input-holder {
-    border-radius: 14px;
+    border-radius: 50px;
   }
 
   .hero-cta-input-holder:hover {
