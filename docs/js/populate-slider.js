@@ -95,7 +95,7 @@ const getCardHtml = (image, description, input, output, tag) => `
         <div class='creator'>
           <p><ins>Result: </ins></p>
           <div class='wrapper'>
-            <img src="mages/output.webp" alt="Creator" loading="lazy" />
+            <img src="images/output.webp" alt="Creator" loading="lazy" />
             <div class="audio-player-code">
               <audio src="${output}"  preload="auto" loop></audio>
               <div class="play-icon"></div>
