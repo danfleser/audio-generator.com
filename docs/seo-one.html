@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html data-wf-page="64cd2436c20b01e6bc26fda3" data-wf-site="64cd2435c20b01e6bc26fd2e">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Text-to-Audio Software: Transform Content with Foley Sounds & Music</title>
+  <meta name="description" content="Elevate your content with our text-to-audio software. Convert text into captivating audio for music, vlogs, videos, and indie films. Unlock creative potential now!">
+  <meta name="keywords" content="Text-to-audio software, Foley sounds, Music generation, Content creators, Vlog creators, Video creators, Indie filmmakers, Audio transformation, Creative content, Engage audiences">
+  <meta name="author" content="AudioGen by Northdan Soft">
+  <meta name="robots" content="index, follow">
+  <meta name="og:title" content="AudioGen - Revolutionizing AI Sound Generation">
+  <meta name="og:description" content="Elevate your content with our text-to-audio software. Convert text into captivating audio for music, vlogs, videos, and indie films. Unlock creative potential now!">
+  <meta name="og:image" content="https://github.com/danfleser/audio-generator.com/raw/master/docs/images/card-image-2-p-500.webp">
+  <meta name="og:url" content="https://www.audio-generator.com">
+  <meta name="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AudioGen - Revolutionizing AI Sound Generation">
+  <meta name="twitter:description" content="Elevate your content with our text-to-audio software. Convert text into captivating audio for music, vlogs, videos, and indie films. Unlock creative potential now!">
+  <meta name="twitter:image" content="https://github.com/danfleser/audio-generator.com/raw/master/docs/images/card-image-2-p-500.webp">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/audiogen-b9ae4e.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/loader.css" rel="stylesheet" type="text/css">
+  <link href="css/audio-player.css" rel="stylesheet" type="text/css">
+  <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="0dabe78f-c28a-3c19-82dc-e745e446ddc5"] {opacity:0;-webkit-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="8803bc6d-2947-006f-10ff-e59d8980546c"] {opacity:0;-webkit-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="0dabe78f-c28a-3c19-82dc-e745e446ddc5"] {opacity:0;-webkit-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="8803bc6d-2947-006f-10ff-e59d8980546c"] {opacity:0;-webkit-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="0dabe78f-c28a-3c19-82dc-e745e446ddc5"] {opacity:0;-webkit-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="8803bc6d-2947-006f-10ff-e59d8980546c"] {opacity:0;-webkit-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="0dabe78f-c28a-3c19-82dc-e745e446ddc5"] {opacity:0;-webkit-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="8803bc6d-2947-006f-10ff-e59d8980546c"] {opacity:0;-webkit-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}</style>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["DM Sans:regular,italic,500,700","Inter:200,300,regular,500,600,700,800"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+    * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+    body {min-width: 360px;}
+    .m-b-none {margin-bottom: 0;}
+    .d-none {display: none;}
+    .d-flex {display: flex;justify-content: center;align-items: center;}
+  </style>
+</head>
+<body>
+  <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="500" data-doc-height="1">
+    <div class="container nav-container">
+      <div class="nav-menu-container">
+        <a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/audio-gen-logo-with-text-black.webp" loading="lazy" alt="AudioGen logo" class="brand-image"></a>
+      </div>
+    </div>
+  </div>
+  <div class="section hero-section">
+    <div class="hero-background">
+      <div class="hero-bg-gridd"></div>
+    </div>
+    <div class="container">
+      <div class="hero-section-holder">
+        <div class="hero-section-container">
+          <div data-w-id="0dabe78f-c28a-3c19-82dc-e745e446ddc5" class="hero-section-title">
+            <h1 class="hero-text hero-text-emboss">
+              Did you know that<br><span class="linear-gradient-text">80% of content creators</span><br>are held back<br>by a silent enemy?
+            </h1>
+          </div>
+          <div data-w-id="8803bc6d-2947-006f-10ff-e59d8980546c" class="hero-section-paragraph-holder">
+            <div class="hero-description">It's a silent assassin that robs your creativity and leaves your content uninspiring. For music creators, vloggers, video makers, and indie filmmakers, finding the right audio can be a Herculean task.<br></div>
+          </div>
+          <div class="hero-section-button-holder-footer">
+            <div class="cta-wrapper">
+              <div class="hero-cta-input-holder">
+                <div class="ai-form w-form">
+                  <form id="leadForm1" name="email-form" data-name="Email Form" method="post" class="ai-form-content">
+                    <input type="email"
+                           class="build-form-input w-input"
+                           maxlength="256" name="email-3"
+                           data-name="Email"
+                           placeholder="Enter your email for exclusive updates and insights"
+                           id="leadForm1email" required=""><input
+                          type="submit" value="Submit" data-wait="Please wait..."
+                          class="button hero-submit-button w-button"></form>
+                  <div id="leadForm1success" class="success-message w-form-done">
+                    <div>
+                      <p>Your email is all set!</p>
+                      <p class="m-b-none">Keep an eye out for email updates. We pick random users for alpha version, you'll be first in line to experience the exciting pops and bangs of creativity.</p>
+                    </div>
+                  </div>
+                  <div id="leadForm1loading" class="success-message d-none">
+                    <div class="d-flex">
+                      <p class="m-b-none">Tunes Brewing</p>
+                      <div class="spinner">
+                        <div class="r1"></div>
+                        <div class="r2"></div>
+                        <div class="r3"></div>
+                        <div class="r4"></div>
+                        <div class="r5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="leadForm1fail" class="error-message-hero w-form-fail">
+                <div>
+                  Looks like our digital DJ hit a funky glitch on the turntables. 🎛️🎵 Give that submit button another tap, and let's keep the party going! 🎉🎤🚀
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section overflow-hidden-mobile">
+    <div class="container">
+      <div class="sponsor-logos">
+        <img src="images/microsoft.webp" alt="Microsoft For Startups Logo" loading="lazy">
+        <img src="images/nvidia.webp" alt="Nvidia Inception Logo" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div id="demo" class="section demo-section-glass">
+    <div data-w-id="a3d87bef-2bd5-e85b-5339-6f5065bd21da" class="circle-section">
+      <div class="circle-sticky">
+        <div class="circle-sticky-content">
+          <div class="circle-titles">
+            <div class="circles-prompt-holder">
+              <div class="circle-prompt-box">/prompt:</div>
+            </div>
+            <div class="circles-prompt-text-holder">
+              <div class="perspective perspective-relative">
+                <div class="circle-title-holder _1">
+                  <div class="circle-title">Innovative</div>
+                </div>
+              </div>
+              <div class="perspective">
+                <div class="circle-title-holder _2">
+                  <div class="circle-title">Customizable</div>
+                </div>
+              </div>
+              <div class="perspective">
+                <div class="circle-title-holder _3">
+                  <div class="circle-title">Personalized</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <address class="circle-container">
+            <div class="circle-images">
+              <div class="circle-image-parent"></div>
+              <div class="circle-image-parent _2"></div>
+              <div class="circle-image-parent _3"></div>
+              <div class="circle-image-parent _4"></div>
+              <div class="circle-image-parent _5"></div>
+              <div class="circle-image-parent _6"></div>
+              <div class="circle-image-parent _7"></div>
+              <div class="circle-image-parent _8"></div>
+              <div class="circle-image-parent _9"></div>
+              <div class="circle-image-parent _10"></div>
+            </div>
+            <div class="circle-images _2">
+              <div class="circle-image-parent"></div>
+              <div class="circle-image-parent _2"></div>
+              <div class="circle-image-parent _3"></div>
+              <div class="circle-image-parent _4"></div>
+              <div class="circle-image-parent _5"></div>
+              <div class="circle-image-parent _6"></div>
+              <div class="circle-image-parent _7"></div>
+              <div class="circle-image-parent _8"></div>
+              <div class="circle-image-parent _9"></div>
+              <div class="circle-image-parent _10"></div>
+            </div>
+            <div class="center-circle"><img src="images/audio-gen-logo-with-text-black.webp" loading="lazy" alt="AudioGen logo" class="circle-logo">
+              <div class="bg">
+                <h1 class="linear-gradient-text">AudioGen</h1>
+              </div>
+              <div class="circle-bg-grid"></div>
+            </div>
+          </address>
+          <div class="circle-gradient"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section overflow-hidden-mobile">
+    <div class="container">
+      <div class="drops-section-holder">
+        <div class="center-text fade-in-move-on-scroll">
+          <p>Trusted by <strong>1,750,000+</strong> content creators from companies including</p>
+        </div>
+        <div class="clients-grid">
+          <div class="client-logo-holder"><img src="images/meta-text.webp" loading="lazy" alt="Meta logo" class="client-logo"></div>
+          <div class="client-logo-holder"><img src="images/apple-text.webp" loading="lazy" height="40" alt="Apple logo" class="client-logo"></div>
+          <div class="client-logo-holder"><img src="images/amazon-text.webp" loading="lazy" height="40" alt="Amazon logo" class="client-logo"></div>
+          <div class="client-logo-holder"><img src="images/netflix-text.webp" loading="lazy" height="40" alt="Netflix logo" class="client-logo"></div>
+          <div class="client-logo-holder"><img src="images/google-text.webp" loading="lazy" height="40" alt="Google logo" class="client-logo"></div>
+        </div>
+        <div class="center-text">
+          <div class="title-holder">
+            <div class="fade-in-move-on-scroll">
+              <h2 class="title-clean">Transform your written words into </h2>
+            </div>
+            <div class="fade-in-move-on-scroll">
+              <h2 class="title-clean dimmed">captivating audio tracks</h2>
+            </div>
+          </div>
+        </div>
+        <div class="grey-cards-holder">
+          <div data-w-id="eaf7432c-fa80-bdc6-2db3-6199aa2326cb" class="grey-cards-wrapper">
+            <div class="grey-cards-content-holder">
+              <div class="grey-card-text-holder">
+                <div class="grey-card-icon-holder"><img src="images/audio-gen-logo-white.webp" loading="lazy" alt="AudioGen icon" class="grey-card-icon"></div>
+                <div class="card-title-holder">
+                  <h2 class="white-title">Hours lost searching for the perfect sound?</h2>
+                </div>
+                <div class="card-paraghraph-holder">
+                  <p class="card-paragraph with-color-purple">AudioGen <strong>generates audio and sounds</strong> based on a <strong>text description</strong>. It has the ability to combine various concepts, attributes, and styles in its creations.</p>
+                  <p class="card-paragraph with-color-purple">Imagine how <strong>frustrating</strong> it is when <strong>your creative ideas</strong> are drowned out by repetitive, <strong>boring audio</strong>. Picture the heartbreak of your masterpiece not shining as it should.</p>
+                </div>
+              </div>
+              <div class="grey-card-image-holder"><img src="images/card-image.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 82vw, (max-width: 991px) 420px, (max-width: 1439px) 43vw, 507px" srcset="images/card-image-p-500.webp 500w, images/card-image.webp 800w" alt="Audio representation of generated music" class="grey-card-image"></div>
+            </div>
+            <div class="background-decor-holder"><img src="images/Mask-Rects.svg" loading="lazy" alt="" class="background-decor"></div>
+          </div>
+          <div class="grey-cards-wrapper">
+            <div class="grey-cards-content-holder">
+              <div class="grey-card-text-holder">
+                <div class="grey-card-icon-holder"><img src="images/audio-gen-logo-white.webp" loading="lazy" alt="AudioGen icon" class="grey-card-icon"></div>
+                <div class="card-title-holder">
+                  <h2 class="white-title">But what if we told you there's a secret weapon?</h2>
+                </div>
+                <div class="card-paraghraph-holder">
+                  <p class="card-paragraph with-color-purple">As pioneers in <strong>text-to-audio</strong> AI-technology, we've empowered countless creators worldwide. Our software is the <strong>trusted</strong> choice of professionals who've reclaimed their creative freedom.</p>
+                </div>
+              </div>
+              <div class="grey-card-image-holder"><img src="images/card-image-2.webp" loading="eager" sizes="(max-width: 479px) 100vw, (max-width: 767px) 82vw, (max-width: 991px) 420px, (max-width: 1439px) 43vw, 507px" srcset="images/card-image-2-p-500.webp 500w, images/card-image-2.webp 800w" alt="Audio representation of generated music" class="grey-card-image"></div>
+            </div>
+            <div class="background-decor-holder"><img src="images/Mask-Rects.svg" loading="lazy" alt="" class="background-decor"></div>
+          </div>
+          <div class="small-cards-holder">
+            <div id="w-node-fb6e61c5-348f-515a-51ba-509ea31acd9b-bc26fda3" data-w-id="fb6e61c5-348f-515a-51ba-509ea31acd9b" style="opacity:0" class="small-cards">
+              <div class="small-cards-image-holder"><img src="images/card-core.webp" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 1439px) 45vw, 627px" srcset="images/card-core-p-500.webp 500w, images/card-core.webp 800w" alt="audiogen core" class="small-cards-image"></div>
+              <div class="small-cards-content-holder">
+                <div class="small-card-text">Lighting Fast. <span class="grey-text">Just start with an idea and see how fast it evolves.</span></div>
+              </div>
+            </div>
+            <div id="w-node-_472e4dc8-aac6-32c2-d384-9ed9dd06f470-bc26fda3" data-w-id="472e4dc8-aac6-32c2-d384-9ed9dd06f470" style="opacity:0" class="small-cards">
+              <div class="small-cards-image-holder"><img src="images/card-params-gen.webp" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 1439px) 45vw, 627px" srcset="images/card-params-gen-p-500.webp 500w, images/card-params-gen.webp 800w" alt="audiogen core audio generation" class="small-cards-image"></div>
+              <div class="small-cards-content-holder">
+                <div class="small-card-text">Text to audio.<span class="grey-text"> Imagine, ask, create, no limit.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="art" data-w-id="604edd17-092b-35df-a4bf-168a7d79ece0" class="section white-section">
+    <div class="container white-container">
+      <div class="relative">
+        <div class="center-text">
+          <div class="art-title-holder">
+            <div class="fade-in-move-on-scroll">
+              <h2 class="title-clean">Endless <span class="title-clean dimmed">Applications</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="generate-section-holder">
+          <div class="generate-section">
+            <div class="generate-section-text-holder">
+              <div class="generate-section-text-container">
+                <div class="generate-title">
+                  <div class="purple-text">Input text:</div>
+                </div>
+                <div class="generate-title-holder">
+                  <div class="generate-main-text">Typing the input text</div>
+                </div>
+                <div class="generate-description-holder">
+                  <p class="paragraph-s">With our software, users have seen <strong>engagement skyrocket</strong> by up to 300%.<br><br> You can <strong>save 80% of your precious time</strong> while crafting captivating audio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="generate-section-image-holder"><img src="images/params.svg" loading="lazy" alt="parameters select" class="generate-image _1st"></div>
+            <div class="generate-section-bg"></div>
+          </div>
+          <div class="generate-section">
+            <div class="generate-section-text-holder">
+              <div class="generate-section-text-container">
+                <div class="generate-title">
+                  <div class="purple-text red">Result:</div>
+                </div>
+                <div class="generate-title-holder">
+                  <div class="generate-main-text">Effortlessly generate foley sounds, music, and audio from text</div>
+                </div>
+                <div class="generate-description-holder">
+                  <p class="paragraph-s">Take control of your creativity <strong>without copyright concerns</strong>.<br> <br>Elevate your content <strong>quality</strong> and audience engagement.</p>
+                </div>
+              </div>
+            </div>
+            <div class="generate-section-image-holder"><img src="images/card-generator.webp" loading="lazy" alt="audiogen core audio generation" class="generate-image"></div>
+            <div class="generate-section-bg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="grey-background"></div>
+    </div>
+    <div class="yellow-background"></div>
+  </div>
+  <div class="section white-background-section">
+    <div class="container">
+      <div class="about-us-section-holder">
+        <div class="about-us-text-holder">
+          <div class="fade-in-move-on-scroll">
+            <h2 class="title-clean">Don't let your content remain in the shadows. <br><span class="title-clean dimmed">Every moment you wait, your potential masterpiece remains unheard.</span></h2>
+          </div>
+        </div>
+        <div class="about-us-grid-section">
+          <div class="about-us-grid">
+            <div id="w-node-_394d2e5f-fbd0-a45d-e96c-b4822bd54d1c-bc26fda3" class="about-us-image-holder"><img src="images/card-tall.webp" loading="lazy" alt="Audio representation of generated music" class="about-us-image"></div>
+            <div id="w-node-ce1de107-6610-a28f-6425-f2e2b7bfe727-bc26fda3" class="about-us-images">
+              <div class="about-us-image-holder"><img src="images/card-wide.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 1439px) 45vw, 627px" srcset="images/card-wide-p-500.webp 500w, images/card-wide.webp 635w" alt="Audio representation of generated music" class="about-us-image"></div>
+              <div class="about-us-text">Unlock a world of audio possibilities with customizable options. <span class="grey-text">Increase your productivity and efficiency.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="About" class="about-div"></div>
+  </div>
+  <div id="join" class="section white-background-section">
+    <div class="container">
+      <div class="cta-holder">
+        <div class="cta-container">
+          <div class="cta-content-holder">
+            <div class="cta-title-holder">
+              <div class="fade-in-move-on-scroll">
+                <h2 class="title-clean" style="text-align: center;">Ready to transform your content into something extraordinary?</h2>
+              </div>
+              <div class="fade-in-move-on-scroll">
+                <h2 class="title-clean dimmed" style="text-align: center;">Act now to seize your creative power. Get started today!<br></h2>
+              </div>
+            </div>
+            <div class="hero-section-button-holder-footer">
+              <div class="cta-wrapper">
+                <div class="hero-cta-input-holder">
+                  <div class="ai-form w-form">
+                    <form id="leadForm2" name="wf-form-Email-Form" data-name="Email Form" method="get"
+                          class="ai-form-content">
+                      <input type="email"
+                             class="build-form-input w-input"
+                             maxlength="256"
+                             name="email"
+                             data-name="Email 3"
+                             placeholder="Enter your email for exclusive updates and insights"
+                             id="leadForm2email"
+                             required=""><input
+                            type="submit" value="Submit" data-wait="Please wait..."
+                            class="button hero-submit-button w-button"></form>
+                    <div id="leadForm2success" class="success-message w-form-done">
+                      <div>
+                        <p>Your email is all set!</p>
+                        <p class="m-b-none">Keep an eye out for email updates. When our alpha version is ready, you'll be first in line to experience the exciting pops and bangs of creativity.</p>
+                      </div>
+                    </div>
+                    <div id="leadForm2loading" class="success-message d-none">
+                      <div class="d-flex">
+                        <p class="m-b-none">Tunes Brewing</p>
+                        <div class="spinner">
+                          <div class="r1"></div>
+                          <div class="r2"></div>
+                          <div class="r3"></div>
+                          <div class="r4"></div>
+                          <div class="r5"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="leadForm2fail" class="error-message-hero w-form-fail">
+                  <div>
+                    Looks like our digital DJ hit a funky glitch on the turntables. 🎛️🎵. Give that submit button another tap, and let's keep the party going strong! 🎉🎤🚀
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background-decor-holder"><img src="images/Bg-CTA.svg" loading="lazy" alt="" class="background-decor"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section overflow-hidden-mobile">
+    <div class="container">
+      <div class="drops-section-holder" style="padding-bottom: 100px;">
+        <div class="grey-cards-holder" style="margin: 0;">
+          <div class="small-cards-holder">
+            <div id="w-node-fb6e61c5-348f-515a-51ba-509ea31acd9b-bc26fda31" data-w-id="fb6e61c5-348f-515a-51ba-509ea31acd9b" style="opacity:0" class="small-cards">
+              <div class="small-cards-image-holder"><img src="images/card-core.webp" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 1439px) 45vw, 627px" srcset="images/card-core-p-500.webp 500w, images/card-core.webp 800w" alt="audiogen core" class="small-cards-image"></div>
+              <div class="small-cards-content-holder">
+                <div class="small-card-text">Imagine your content standing out, captivating your audience like never before. <span class="grey-text">With our software, the possibilities are endless.</span></div>
+              </div>
+            </div>
+            <div id="w-node-_472e4dc8-aac6-32c2-d384-9ed9dd06f470-bc26fda32" data-w-id="472e4dc8-aac6-32c2-d384-9ed9dd06f470" style="opacity:0" class="small-cards">
+              <div class="small-cards-image-holder"><img src="images/card-params-gen.webp" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 1439px) 45vw, 627px" srcset="images/card-params-gen-p-500.webp 500w, images/card-params-gen.webp 800w" alt="audiogen core audio generation" class="small-cards-image"></div>
+              <div class="small-cards-content-holder">
+                <div class="small-card-text">Effortlessly create audio from text with our user-friendly software. <span class="grey-text">No technical expertise required.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="join2" class="section white-background-section">
+    <div class="container">
+      <div class="cta-holder">
+        <div class="cta-container">
+          <div class="cta-content-holder">
+            <div class="cta-title-holder">
+              <div class="fade-in-move-on-scroll">
+                <h2 class="title-clean" style="text-align: center;">It's as simple as writing, and your content comes to life.</h2>
+              </div>
+              <div class="fade-in-move-on-scroll">
+                <h2 class="title-clean dimmed" style="text-align: center;">Click the button below to unlock your creative potential.</h2>
+              </div>
+            </div>
+            <div class="hero-section-button-holder-footer">
+              <div class="cta-wrapper">
+                <div class="hero-cta-input-holder">
+                  <div class="ai-form w-form">
+                    <form id="leadForm3" name="wf-form-Email-Form" data-name="Email Form" method="get"
+                          class="ai-form-content">
+                      <input type="email"
+                             class="build-form-input w-input"
+                             maxlength="256"
+                             name="email"
+                             data-name="Email 3"
+                             placeholder="Enter your email for exclusive updates and insights"
+                             id="leadForm3email"
+                             required=""><input
+                            type="submit" value="Submit" data-wait="Please wait..."
+                            class="button hero-submit-button w-button"></form>
+                    <div id="leadForm3success" class="success-message w-form-done">
+                      <div>
+                        <p>Your email is all set!</p>
+                        <p class="m-b-none">Keep an eye out for email updates. When our alpha version is ready, you'll be first in line to experience the exciting pops and bangs of creativity.</p>
+                      </div>
+                    </div>
+                    <div id="leadForm3loading" class="success-message d-none">
+                      <div class="d-flex">
+                        <p class="m-b-none">Tunes Brewing</p>
+                        <div class="spinner">
+                          <div class="r1"></div>
+                          <div class="r2"></div>
+                          <div class="r3"></div>
+                          <div class="r4"></div>
+                          <div class="r5"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="leadForm3fail" class="error-message-hero w-form-fail">
+                  <div>
+                    Looks like our digital DJ hit a funky glitch on the turntables. 🎛️🎶 Give that submit button another tap, and let's keep the party going strong! 🎉🎤🚀
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background-decor-holder"><img src="images/Bg-CTA.svg" loading="lazy" alt="" class="background-decor"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section white-background-section">
+    <div class="footer">
+      <div class="container footer-container">
+        <div class="footer-holder">
+          <div class="footer-brand-holder">
+            <div id="w-node-eec48bb4-7097-222d-1919-0fb3ed1909af-0a144c54" class="footer-link-wrapper">
+              <div class="footer-brand-container">
+                <a href="index.html" aria-current="page" class="footer-brand-link w-inline-block w--current"><img src="images/audio-gen-logo-with-text-white.webp" loading="lazy" alt="AudioGen logo" class="footer-brand-logo"></a>
+                <div class="footer-title">Our revolutionary app turns your ideas into reality by generating any audio or music you can think of. Save on music costs, explore new styles, and speed up projects using AudioGen, AI solution.</div>
+                <div class="small-paragraph">AudioGen with AI - Bring mind ideas to sound</div>
+              </div>
+            </div>
+          </div>
+          <div class="infinite-ai-images-holder infinite-ai-images-footer">
+            <div class="infinite-ai-images-container ai-images-footer-container">
+              <div class="infinite-ai-images-grid ai-images-grid-footer">
+                <div class="infinite-ai-image-wrapper"><img src="images/beat-35.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"><img src="images/beat-44.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"></div>
+                <div class="infinite-ai-image-wrapper _02"><img src="images/beat-42.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"><img src="images/beat-43.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"></div>
+                <div class="infinite-ai-image-wrapper _03"><img src="images/beat-23.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"><img src="images/beat-39.webp" loading="lazy" alt="Audio representation of generated music" sizes="(max-width: 479px) 100vw, (max-width: 991px) 22vw, 17vw" srcset="images/beat-39-p-500.webp 500w, images/beat-39.webp 676w" class="infnite-image withfilters"></div>
+                <div class="infinite-ai-image-wrapper _02"><img src="images/beat-29.webp" loading="lazy" alt="Audio representation of generated music" sizes="(max-width: 479px) 100vw, (max-width: 991px) 22vw, 17vw" srcset="images/beat-29-p-500.webp 500w, images/beat-29.webp 676w" class="infnite-image withfilters"><img src="images/beat-20.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"></div>
+                <div class="infinite-ai-image-wrapper"><img src="images/beat-27.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"><img src="images/beat-22.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"></div>
+              </div>
+              <div class="infinite-ai-images-grid ai-images-grid-footer">
+                <div class="infinite-ai-image-wrapper"><img src="images/beat-35.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"><img src="images/beat-44.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"></div>
+                <div class="infinite-ai-image-wrapper _02"><img src="images/beat-42.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"><img src="images/beat-43.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"></div>
+                <div class="infinite-ai-image-wrapper _03"><img src="images/beat-23.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"><img src="images/beat-39.webp" loading="lazy" alt="Audio representation of generated music" sizes="(max-width: 479px) 100vw, (max-width: 991px) 22vw, 17vw" srcset="images/beat-39-p-500.webp 500w, images/beat-39.webp 676w" class="infnite-image withfilters"></div>
+                <div class="infinite-ai-image-wrapper _02"><img src="images/beat-29.webp" loading="lazy" alt="Audio representation of generated music" sizes="(max-width: 479px) 100vw, (max-width: 991px) 22vw, 17vw" srcset="images/beat-29-p-500.webp 500w, images/beat-29.webp 676w" class="infnite-image withfilters">
+                  <a href="https://instagram.com/wedoflow" target="_blank" class="footer-instagram-profile-link w-inline-block">
+                    <div>View Instagram</div>
+                  </a>
+                </div>
+                <div class="infinite-ai-image-wrapper"><img src="images/beat-27.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"><img src="images/beat-22.webp" loading="lazy" alt="Audio representation of generated music" class="infnite-image withfilters"></div>
+              </div>
+            </div>
+            <div class="left-gradient-black"></div>
+            <div class="bottom-gradient-black"></div>
+            <div class="right-garadient"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-brand-holder bottom">
+          <div data-w-id="01e017fe-fbca-72ae-a56e-41d557142d70" class="copyright-panel">
+            <div class="copyright-text">© 2023 - Made with 💛 by <a href="https://northdan.com/" target="_blank" class="copyright-link">Northdan Soft</a>
+              <a href="https://wedoflow.com?ref=aiken-template" target="_blank" class="copyright-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64cd2435c20b01e6bc26fd2e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/populate-slider.js" type="text/javascript"></script>
+  <script src="js/audio-player.js" type="text/javascript"></script>
+  <script src="js/email.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
